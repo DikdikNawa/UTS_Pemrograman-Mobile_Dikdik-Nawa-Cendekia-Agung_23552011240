@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#141414">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="266dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo_dream" />
+
+    <!-- Nama aplikasi (opsional) -->
+    <!--
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTS Mobile"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+    -->
+
+    <!-- Nama pembuat di bawah -->
+    <TextView
+        android:id="@+id/tvBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By : Dikdik_Nawa_08"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+</RelativeLayout>

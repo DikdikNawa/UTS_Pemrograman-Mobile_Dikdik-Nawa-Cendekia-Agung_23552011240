@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UTS_Pemrograman_Mobile" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna utama -->
+        <item name="colorPrimary">#333333</item>
+        <item name="colorPrimaryContainer">#333333</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Warna latar -->
+        <item name="android:colorBackground">#FFFFFF</item>
+
+        <!-- Tombol tidak tertimpa warna ungu -->
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+
+        <!-- Agar fullscreen -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Custom button style agar tidak terpengaruh tint bawaan -->
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@null</item>
+    </style>
+</resources>
