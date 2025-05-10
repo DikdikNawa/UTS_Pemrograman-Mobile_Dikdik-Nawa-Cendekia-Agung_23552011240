@@ -15,13 +15,12 @@ class SplashScreenActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-        setContentView(R.layout.activity_splash_screen) // Pastikan layout ini sesuai dengan yang sudah kamu buat
+        setContentView(R.layout.activity_splash_screen)
 
-        // Delay selama 2 detik sebelum berpindah ke LoginActivity
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LoginActivity::class.java) // Ganti dengan LoginActivity atau activity yang kamu tuju
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            finish() // Tutup SplashScreen agar tidak kembali ke SplashScreen saat tombol back ditekan
-        }, 2000) // Delay 2 detik
+            finish()
+        }, 2000)
     }
 }
